@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Joshua Johnson's Stage 1 Project</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h1 class="title">Intro to Programming Nanodegree</h1>
+	<div class="lesson">
+		<h2 id="lesson-1">The Basics of the Web and HTML</h2>
+		<div class="concept" id="lesson-1-1">
+			<h3 class="concept-title">
+				<a href="http://en.wikipedia.org/wiki/World_Wide_Web">World Wide Web</a>
+			</h3>
+			<div class="concept-description">
+				The web is the way computers interact with the internet via HTTP, or hypertext transfer protocol. The webpages we see are transmitted via this protocol and are written in HTML, hypertext markup language.
+			</div>
+		</div>
+		<div class="concept" id="lesson-1-2">
+			<h3 class="concept-title">
+				<a href="http://en.wikipedia.org/wiki/HTML">HTML</a>
+			</h3>
+			<div class="concept-description">
+				HTML documents are written using markup language, or tags, to alter plain text and present the multimedia experiences that we know as webpages. Different tags have different behaviors. Some must be accompanied by a closing tag, while others are void tags. Some tags are block tags and segregate content into invisible boxes, while others are inline and simply affect the text without blocking it off.
+			</div>
+		</div>
+		<div class="concept" id="lesson-1-3">
+			<h3 class="concept-title">Stupid Computers</h3>
+			<div class="concept-description">
+				We say that computers are stupid because they cannot detect and fix mistakes that a reasonably intelligent human would be able to. They can only interpret instructions literally and cannot guess context.
+			</div>
+		</div>
+		<div class="concept" id="lesson-1-4">
+			<h3 class="concept-title">The Importance of Remembering Everything</h3>
+			<div class="concept-description">
+				Programming has too many rules and details to remember everything. Programmers should focus on learning big, important details and rely on their ability to search for and find the rest. If you are stressed over remembering every little detail of code which will invariably change in the future, please click <a href="https://www.youtube.com/watch?v=i6OwxEd0Th0">here</a> to destress, then resume your studies.
+			</div>
+		</div>
+	</div>
+	<div class="lesson">
+		<h2 id="lesson-2">Creating a Structured Document with HTML</h2>
+		<div class="concept" id="lesson-2-1">
+			<h3 class="concept-title">What a Front-End Web Developer Does</h3>
+			<div class="concept-description">
+				The job of a front-end web developer is to translate the visual design of a website into an actual, functional site. The tools they use for these sites are HTML, CSS (Cascading Style Sheets), and JavaScript, which we'll discuss later.
+			</div>
+		</div>
+		<div class="concept" id="lesson-2-2">
+			<h3 class="concept-title">HTML & CSS</h3>
+			<div class="concept-description">
+				HTML files provide the structure of the site. HTML is the language of the web, with syntax and rules, composed primarily of tags that instruct the browser how to display the content. CSS files determine the style of the site. Webpages with identical HTML may look radically different depending on their CSS file. CSS may instruct the browser how to display fonts and colors, as well as shapes and sizes of objects.
+			</div>
+		</div>
+		<div class="concept" id="lesson-2-3">
+			<h3 class="concept-title">
+				<a href="http://en.wikipedia.org/wiki/Document_Object_Model">The DOM Tree</a>
+			</h3>
+			<div class="concept-description">
+				The browser renders HTML documents into a tree-like structure called the DOM, or Document Object Model, tree, that we can see in the developer tools of a browser. Using this tree, we can peruse through each element in a logically-organized manner.
+			</div>
+		</div>
+		<div class="concept" id="lesson-2-4">
+			<h3 class="concept-title">Boxifying (A Real Word)</h3>
+			<div class="concept-description">
+				Despite appearances, all objects on a webpage are contained in rectangular boxes which may or may not be visible on the page. A designer presents the front-end web developer with a design for the website, who then breaks down the page into basic component boxes from big to small. These boxes are then defined with div tags, which are accompanied by class names to instruct the CSS file how to treat each box. You can see what a box looks like by clicking <a href="https://www.google.com/search?q=box&amp;bm=isch">here</a>.
+			</div>
+		</div>
+	</div>
+	<div class="lesson">
+		<h2 id="lesson-3">Creating a Structured Document with HTML</h2>
+		<div class="concept" id="lesson-3-1">
+			<h3 class="concept-title">How to Use CSS</h3>
+			<div class="concept-description">
+				With no CSS, browser uses its default style to display elements, resulting in a very basic look. CSS can either be placed in the head of the HTML file or placed in a separate file. This may help you stay organized on larger projects. Another method which has the high potential for unnecessary repetition and makes HTML sites more difficult to maintain or update is the inline use of the <b>style</b> tag for each element.
+			</div>
+		</div>
+		<div class="concept" id="lesson-3-2">
+			<h3 class="concept-title">Composition of the Box</h3>
+			<div class="concept-description">
+				The boxes that make up webpages are composed of the margin, border, padding, and content. Content is the image or text, a sort of nucleus surrounded by other sections. Padding clears an area around the content within the border. The padding is affected by background color of box. The border goes around padding and content. The border is inherited from the color property of the box. The margin, or space between boxes, clears an area around the border. It is completely transparent and colorless.
+			</div>
+		</div>
+		<div class="concept" id="lesson-3-3">
+			<h3 class="concept-title">Box Sizing</h3>
+			<div class="concept-description">
+				The element size is equal to the sum of the content, padding, and border widths. In order to maintain uniform box size without recalculating each time you change one of those values, use the <b>box-sizing: border-box;</b> CSS style. The size of the box can be set in pixels or percentage. Setting a box size as a percentage will cause the box to resize based on display size or size of browser window. Setting a box size in pixels will cause box to always display in exactly the same size, which may lead to less than desirable results on small displays or when the browser window is resized smaller. You can also set a max width for the box. In that case, box will resize and become smaller than necessary but never larger than the max width.
+			</div>
+		</div>
+		<div class="concept" id="lesson-3-4">
+			<h3 class="concept-title">Box Positioning</h3>
+			<div class="concept-description">
+				Positioning boxes on the page is one of the most complicated parts of working with CSS. Divs are block elements (as opposed to inline), so by default they take up the entire width of a page. Adding the rule <b>display: flex;</b> to the appropriate CSS will override this behavior and let divs appear next to each other.
+			</div>
+		</div>
+		<div class="concept" id="lesson-3-5">
+			<h3 class="concept-title">Avoiding Repetition: How to Not Repeat Yourself or Do the Same Thing Over and Over. This Should Be Avoided and Also You Shouldn't Do It.</h3>
+			<div class="concept-description">
+				It cannot be stressed enough how important it is to avoid repetition in your code. This not only makes it so that you don't have to repeat yourself over and over, but also helps you to avoid errors that might come from having to change so many individual elements. This allows you to set CSS selectors such as <b>class</b> and <b>ID</b> and change all elements with those selectors using one CSS command.
+			</div>
+		</div>
+		<div class="concept" id="lesson-3-6">
+			<h3 class="concept-title">Recap and Recipe for Successful Web Developing</h3>
+			<div class="concept-description">
+				<ol>
+					<li>Look for natural boxes in a design layout.</li>
+					<li>Look for repeated styles and semantic elements.</li>
+					<li>Write your HTML using appropriate tags and selectors.</li>
+					<li>Apply styles (from BIGGEST to smallest).</li>
+					<li>Fix things.
+						<ul>
+							<li>Resize the browser.</li>
+							<li>Try out your code in different browsers.</li>
+						</ul>
+					</li>
+				</ol>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
